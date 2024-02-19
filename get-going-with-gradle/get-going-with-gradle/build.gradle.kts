@@ -11,18 +11,3 @@ tasks.register("greeting") {
         println("Hello World!")
     }
 }
-
-tasks.register("do_some_work") {
-    description = "Do some work"
-    group = "tutorial"
-    doLast {
-        val work: (String) -> Unit = {
-            println("$it =)")
-        }
-        work.invoke("Do some work kid!")
-    }
-}
-
-abstract class DoWork : DefaultTask() {
-    abstract fun doWork()
-}
