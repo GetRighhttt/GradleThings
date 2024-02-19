@@ -7,6 +7,9 @@
   - written in the Kotlin language
   - can also be written in Groovy
   - highly configurable to meet project needs
+ 
+![image](https://github.com/GetRighhttt/GradleThings/assets/105057858/80ea3be1-8068-42ca-86cf-06d37943f191)
+
 
 #### Why use Gradle
 - Makes building and running applications very easy
