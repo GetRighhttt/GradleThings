@@ -1,5 +1,4 @@
-# GradleThings
-Repository to demonstrate how to work with Gradle.
+# Gradle
 
 ### What is Gradle?
 - Build automation tool
