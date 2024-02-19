@@ -16,9 +16,13 @@ tasks.register("do_some_work") {
     description = "Do some work"
     group = "tutorial"
     doLast {
-        val work: () -> Unit = {
-            println("Work Completed!")
+        val work: (String) -> Unit = {
+            println("$it =)")
         }
-        work.invoke()
+        work.invoke("Do some work kid!")
     }
+}
+
+abstract class DoWork : DefaultTask() {
+    abstract fun doWork()
 }
