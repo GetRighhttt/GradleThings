@@ -11,3 +11,14 @@ tasks.register("greeting") {
         println("Hello World!")
     }
 }
+
+tasks.register("do_some_work") {
+    description = "Do some work"
+    group = "tutorial"
+    doLast {
+        val work: () -> Unit = {
+            println("Work Completed!")
+        }
+        work.invoke()
+    }
+}
