@@ -23,4 +23,10 @@ Repository to demonstrate how to work with Gradle.
   - written in Kotlin DSL
   - lives in top-level of the project
   - has `plugins`, `repositories`, and `dependencies`; also houses some metadata
-- 
+- `tasks` defines a unit of work
+  - invoked form the command line
+  - `./gradlew build` is considered a build task
+  - see a full list of available tasks by running `./gradlew tasks`
+  - can also create own custom tasks
+  - task can have dependencies on other tasks
+  - creates a task graph of dependencies
