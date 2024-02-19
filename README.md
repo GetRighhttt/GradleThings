@@ -30,3 +30,8 @@ Repository to demonstrate how to work with Gradle.
   - can also create own custom tasks
   - task can have dependencies on other tasks
   - creates a task graph of dependencies
+- `wrapper` is the script used to invoke Gradle and run tasks
+  - always committed into version control
+  - no local Gradle installation required for anyone building your project
+  - contains a specific version of gradle for the project
+  - ALWAYS use the Gradle wrapper script for safety (unless initializing new gradle project)
